@@ -1,0 +1,20 @@
+# Build output
+target/
+dist/
+
+# Cargo.lock is kept: this is a binary crate
+
+# rustfmt backups
+**/*.rs.bk
+
+# Debug symbols
+*.pdb
+
+# Scratch
+tmp/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
