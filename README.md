@@ -2,7 +2,7 @@
 
 A small cross-platform desktop app (Rust, egui) for managing SSH port forwards without touching `~/.ssh/config`. It lives in the system tray, keeps a history of sessions, shows which local ports are in use, and offers the hosts it finds in your SSH config.
 
-![screenshot placeholder](docs/screenshot.png) <!-- TODO: add screenshots -->
+![SSH Tunnel Manager](docs/screenshot.png)
 
 ## Features
 

@@ -4,13 +4,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## State of the repo
 
-All phases of `plans/ssh-tunnel-manager-plan.md` are implemented plus favorite groups. Only macOS has been run by hand; Windows compiles (`cargo check --target x86_64-pc-windows-msvc`) and Linux (GTK tray thread) is only exercised by CI. The tray test matrix and packaging are unverified; see the unchecked plan items.
+All phases of `plans/ssh-tunnel-manager-plan.md` are implemented plus favorite groups. Only macOS has been run by hand; Windows compiles (`cargo check --target x86_64-pc-windows-msvc`) and Linux (GTK tray thread) has not been run. The tray test matrix and packaging are unverified; see the unchecked plan items.
 
 ## What it is
 
 A cross-platform (Windows 10+, macOS 12+, Linux) Rust desktop app (`eframe`/egui) that manages SSH port forwards (`-L`/`-R`/`-D`) by spawning the system `ssh` binary. It never edits `~/.ssh/config`. Features: favorite groups (one server, many ports), system tray with hide-to-tray, session history, in-use local port scanner, known-hosts list from SSH config, auto-reconnect.
 
-Commands: `cargo run`, `cargo test`, `cargo test <name>` for a single test, `cargo clippy --all-targets -- -D warnings` (CI enforces it), `cargo packager --release` for installers.
+Commands: `cargo run`, `cargo test`, `cargo test <name>` for a single test, `cargo clippy --all-targets -- -D warnings`, `cargo packager --release` for installers.
 
 ## Architecture (the parts that span files)
 
